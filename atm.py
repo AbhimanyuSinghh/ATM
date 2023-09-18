@@ -9,7 +9,7 @@ class ATM:
         return self.__pin
     
 
-    def set_pin(self, newPin):
+    def change_pin(self, newPin):
         if type(newPin) == str:
             self.__pin = newPin
             print('pin changed')
@@ -92,9 +92,6 @@ class ATM:
             print('Thank you for using our service ')
         
             
-            
-            
-    
 def main():
     sbi = ATM()
     sbi.menu()
@@ -104,7 +101,7 @@ def main():
 
     # Setting a new PIN and displaying success or failure
     new_set_pin = input('enter the new pin that you wish to set: ')
-    sbi.set_pin(new_set_pin)
+    sbi.change_pin(new_set_pin)
     new_pin = sbi.get_pin()
     print("Current PIN:", new_pin)
 
@@ -116,20 +113,6 @@ def main():
     sbi.menu()
 
     
-    
-    
 if __name__ == '__main__':
     main()
         
-    
-    
-  
-        
-        
-        
-            
-        
-
-    
-    
-    
